@@ -6,9 +6,9 @@ Part of the motivation of this work is to determine if there is genetic structur
 and to determine if there are genetic differences between phenotypically-defined parasites based on their response to ivermectin. There are 181 samples in total, with 104 
 defined as "good responders", 39 moderate responders, 35 poor responders, and 3 very poor responders.  
 
+DNA was extracted from archival samples by Sam Armoo in Ghana, before individual RAD-seq libraries were prepared by SRD and sequneced on two MiSeq lanes. 
+
 Current analyses: [Workbook](03_code/ovolvulus_rad-seq.workbook.md)
-
-
 
 Any reuse of data or code is encouraged with due acknowledgement, either via citation of the published manuscript (when available) and/or GitHub repository. Comments, 
 suggestions, and discussion are welcome.
