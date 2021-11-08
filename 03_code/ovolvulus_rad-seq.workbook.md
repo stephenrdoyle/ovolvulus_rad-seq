@@ -83,16 +83,17 @@ done
      - can have a third column, as included here, containing addition populaiton data.
      - Eg. samples.popmap2
 
-| IDX01_RAD02	| AB1 | 	black_volta |
-| IDX01_RAD03	| AB1 |	black_volta |
-| IDX01_RAD04	| AB1 |	black_volta |
-| IDX01_RAD05	| AB1 |	black_volta |
-| IDX01_RAD12	| AB1 |	black_volta |
-| IDX01_RAD14	| AB1 |	black_volta |
-| IDX01_RAD17	| AB1 |	black_volta |
-| IDX01_RAD18	| AB1 |	black_volta |
-| IDX01_RAD24	| AB2 |	black_volta |
-| IDX01_RAD26	| AB2 |	black_volta |
+| --- | --- | --- |
+| IDX01_RAD02 | AB1 | black_volta |
+| IDX01_RAD03 | AB1 | black_volta |
+| IDX01_RAD04 | AB1 | black_volta |
+| IDX01_RAD05 | AB1 | black_volta |
+| IDX01_RAD12 | AB1 | black_volta |
+| IDX01_RAD14 | AB1 | black_volta |
+| IDX01_RAD17 | AB1 | black_volta |
+| IDX01_RAD18 | AB1 | black_volta |
+| IDX01_RAD24 | AB2 | black_volta |
+| IDX01_RAD26 | AB2 | black_volta |
 
 ```bash
 WORKING_DIR=/nfs/users/nfs_s/sd21/lustre118_link/ov_ltu/RADSEQ_2021
