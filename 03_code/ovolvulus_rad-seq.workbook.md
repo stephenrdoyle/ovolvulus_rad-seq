@@ -83,7 +83,7 @@ done
      - can have a third column, as included here, containing addition populaiton data.
      - Eg. samples.popmap2
 
-| --- | --- | --- |
+
 | IDX01_RAD02 | AB1 | black_volta |
 | IDX01_RAD03 | AB1 | black_volta |
 | IDX01_RAD04 | AB1 | black_volta |
