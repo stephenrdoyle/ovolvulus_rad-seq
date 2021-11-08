@@ -81,7 +81,8 @@ done
 - wrapper needs to point to the mapped bams from the previous step, and a "population map", which I generated way back.
      - the population map is a tab delimited file, containing a minimum two columns, "sample ID" and "population". note, the file doesn't have a header
      - can have a third column, as included here, containing addition populaiton data.
-     - Eg. samples.popmap2
+     - Eg. samples.popmap2 - 181 files in 14 populations and 4 groups.
+
 
 
      | IDX01_RAD02 	| AB1 	| black_volta 	|
@@ -95,7 +96,10 @@ done
      | IDX01_RAD18 	| AB1 	| black_volta 	|
      | IDX01_RAD24 	| AB2 	| black_volta 	|
      | IDX01_RAD26 	| AB2 	| black_volta 	|
-     
+     ... and so on.
+
+- placeholder - neat way to generate markdown tables: https://www.tablesgenerator.com/markdown_tables
+
 
 ```bash
 WORKING_DIR=/nfs/users/nfs_s/sd21/lustre118_link/ov_ltu/RADSEQ_2021
@@ -121,7 +125,7 @@ WORKING_DIR=/nfs/users/nfs_s/sd21/lustre118_link/ov_ltu/RADSEQ_2021
 ref_map.pl \
 --samples ${WORKING_DIR}/03_MAPPING \
  --popmap ${WORKING_DIR}/04_REFMAP/INFO/samples.popmap2 \
- --out-path ${WORKING_DIR}/04_REFMAP \
+ -o ${WORKING_DIR}/04_REFMAP \
  --rm-pcr-duplicates
 
  ```
