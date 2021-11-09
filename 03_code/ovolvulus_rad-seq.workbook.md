@@ -371,3 +371,37 @@ ref_map.pl \
  --rm-pcr-duplicates
 
  ```
+
+
+
+WORKING_DIR=/nfs/users/nfs_s/sd21/lustre118_link/ov_ltu/RADSEQ_2021
+
+bsub.py --threads 20 10 populations \
+"populations \
+ --in-path ${WORKING_DIR}/04_REFMAP \
+ --popmap ${WORKING_DIR}/04_REFMAP/INFO/samples.popmap2 \
+ --out-path ${WORKING_DIR}/04_REFMAP/POPULATIONS \
+ --min-samples-overall 10 \
+ --min-populations 2 \
+ --min-maf 0.05 \
+ --fstats \
+ --sigma 50kb \
+ --smooth \
+ --bootstrap \
+ --bootstrap-reps 100 \
+ --threads 20 \
+ --structure \
+ --radpainter \
+ --treemix \
+ --vcf"
+
+
+
+
+cat out.imiss | awk '{if($5>0.5) print }' | cut -f1 > remove.list
+
+
+vcftools --vcf populations.snps.vcf --remove remove.list --maf 0.05 --max-missing 0.7 --missing-indv
+After filtering, kept 133 out of 181 Individuals
+Outputting Individual Missingness
+After filtering, kept 3687 out of a possible 82989 Sites
